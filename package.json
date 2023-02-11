@@ -1,0 +1,31 @@
+{
+  "name": "playwrightdemo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test": "playwright test && playwright show-report"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@playwright/experimental-ct-vue": "^1.30.0",
+    "@playwright/test": "^1.30.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vue-tsc": "^1.0.24"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
