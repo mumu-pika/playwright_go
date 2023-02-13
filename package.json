@@ -6,7 +6,10 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "test": "playwright test && playwright show-report"
+    "test": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen demo.playwright.dev/todomvc",
+    "report": "playwright show-report"
   },
   "dependencies": {
     "vue": "^3.2.45"
@@ -16,6 +19,7 @@
     "@commitlint/config-conventional": "^17.4.2",
     "@playwright/experimental-ct-vue": "^1.30.0",
     "@playwright/test": "^1.30.0",
+    "@types/node": "^18.13.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
